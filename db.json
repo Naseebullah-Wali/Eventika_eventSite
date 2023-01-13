@@ -1,0 +1,632 @@
+{
+  "users": [
+    {
+      "email": "nik.kyunney@gmail.com",
+      "password": "$2a$10$mnWZjP9/FmnbLE97ybSy4OkC3inSZPaq42jZTSl7CzL8y/hIonnPy",
+      "firstname": "Kyunney",
+      "lastname": "Nikiforova",
+      "id": 1
+    },
+    {
+      "email": "rachelgreen@gmail.com",
+      "password": "$2a$10$S0baIwhsXRVUZJgBMaWZY.uawOpTdDtavQqe8itwm32rk4Wg5B8RS",
+      "firstname": "Rachel",
+      "lastname": "",
+      "id": 2
+    },
+    {
+      "email": "monicageller@yahoo.com",
+      "password": "$2a$10$wVEHrBz4IS3GyJ1RCKKKwesx9qA/8MqVRXWc1JdfOvQdK.aP/cCoa",
+      "firstname": "Monica",
+      "lastname": "Geller",
+      "id": 3
+    },
+    {
+      "email": "chandler@gmail.com",
+      "password": "$2a$10$c8vajcxsaXT8QAqHbnmLZO63MY7/mngeuRao17/t/jV/Ud4ug0ms2",
+      "firstname": "Chandler",
+      "lastname": "Bing",
+      "id": 4
+    },
+    {
+      "email": "rosssss@yahoo.com",
+      "password": "$2a$10$Z0VUYYKl/Ou3GcTvAyafmeGPhNj55pVVeWoZ2f25RKyheirMMTjwe",
+      "firstname": "Ross",
+      "lastname": "Geller",
+      "id": 5
+    },
+    {
+      "email": "check@gmail.com",
+      "password": "12345",
+      "lastname": "checkName",
+      "id": 6
+    },
+    {
+      "email": "check2@gmail.com",
+      "password": "123456",
+      "lastname": "check2last",
+      "firstname": "Check2",
+      "id": 7
+    },
+    {
+      "email": "check3@gmail.com",
+      "password": "123456",
+      "lastname": "check3",
+      "firstname": "check3",
+      "id": 8
+    },
+    {
+      "email": "check4@gmail.com",
+      "password": "12345",
+      "lastname": "check4",
+      "firstname": "check4",
+      "id": 9
+    },
+    {
+      "email": "check5@gmail.com",
+      "password": "123456",
+      "lastname": "check5last",
+      "firstname": "check5",
+      "id": 10
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 11
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 12
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 13
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 14
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 15
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 16
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 17
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 18
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 19
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 20
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 21
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 22
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 23
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 24
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 25
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 26
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 27
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 28
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 29
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 30
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 31
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 32
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 33
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 34
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 35
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 36
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 37
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 38
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 39
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 40
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 41
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 42
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 43
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 44
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 45
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 46
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 47
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 48
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 49
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 50
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 51
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 52
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 53
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 54
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 55
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 56
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 57
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 58
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 59
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 60
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 61
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 62
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 63
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 64
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 65
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 66
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 67
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 68
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 69
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 70
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 71
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 72
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 73
+    },
+    {
+      "email": "",
+      "password": "",
+      "lastname": "",
+      "firstname": "",
+      "id": 74
+    },
+    {
+      "email": "logcheck@gmail.com",
+      "password": "123456",
+      "lastname": "logcheck",
+      "firstname": "logcheck",
+      "id": 75
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Frontend Development Lightning Talks",
+      "date": "Thu, Oct 13 · 8:45 PM",
+      "location": "2 Bankside, London",
+      "img": "../assets/card2.webp",
+      "event-type": "inperson",
+      "category": "technology",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla posuere ligula, id commodo est cursus et. Sed massa mauris, auctor sed faucibus vehicula, viverra eu turpis. Suspendisse sollicitudin ipsum non mi luctus malesuada. In hac habitasse platea dictumst. Proin sed elementum mi. Donec finibus venenatis vulputate. Nulla rutrum risus pretium velit rutrum convallis. Ut ut augue nunc. Aliquam consequat enim mollis, tempus est a, rhoncus tellus. Proin ornare vel turpis sed bibendum. Fusce tincidunt varius augue, eu laoreet libero dapibus quis. Vivamus arcu dui, gravida id cursus ac, blandit ullamcorper erat. Pellentesque lacinia nunc mauris, sit amet sagittis est faucibus ut."
+    },
+    {
+      "id": 2,
+      "title": "What is the Metaverse? Meta explains it all.",
+      "date": "Wed, Oct 19 · 6:00 PM",
+      "location": "Online",
+      "img": "./src/assets/card2.webp",
+      "event-type": "online",
+      "category": "technology",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla posuere ligula, id commodo est cursus et. Sed massa mauris, auctor sed faucibus vehicula, viverra eu turpis. Suspendisse sollicitudin ipsum non mi luctus malesuada. In hac habitasse platea dictumst. Proin sed elementum mi. Donec finibus venenatis vulputate. Nulla rutrum risus pretium velit rutrum convallis. Ut ut augue nunc. Aliquam consequat enim mollis, tempus est a, rhoncus tellus. Proin ornare vel turpis sed bibendum. Fusce tincidunt varius augue, eu laoreet libero dapibus quis. Vivamus arcu dui, gravida id cursus ac, blandit ullamcorper erat. Pellentesque lacinia nunc mauris, sit amet sagittis est faucibus ut."
+    },
+    {
+      "id": 3,
+      "title": "AutoML for Natural Language Processing",
+      "date": "Mon, Oct 17 · 7:30 PM",
+      "location": "Principal Place, London",
+      "img": "./src/assets/card3.webp",
+      "event-type": "inperson",
+      "category": "technology",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla posuere ligula, id commodo est cursus et. Sed massa mauris, auctor sed faucibus vehicula, viverra eu turpis. Suspendisse sollicitudin ipsum non mi luctus malesuada. In hac habitasse platea dictumst. Proin sed elementum mi. Donec finibus venenatis vulputate. Nulla rutrum risus pretium velit rutrum convallis. Ut ut augue nunc. Aliquam consequat enim mollis, tempus est a, rhoncus tellus. Proin ornare vel turpis sed bibendum. Fusce tincidunt varius augue, eu laoreet libero dapibus quis. Vivamus arcu dui, gravida id cursus ac, blandit ullamcorper erat. Pellentesque lacinia nunc mauris, sit amet sagittis est faucibus ut."
+    },
+    {
+      "id": 4,
+      "title": "Visit the OM Yoga show",
+      "date": "Fri, Oct 14 · 1:00 PM",
+      "location": "Alexandra Palace, London",
+      "img": "./src/assets/card4.webp",
+      "event-type": "inperson",
+      "category": "sports",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla posuere ligula, id commodo est cursus et. Sed massa mauris, auctor sed faucibus vehicula, viverra eu turpis. Suspendisse sollicitudin ipsum non mi luctus malesuada. In hac habitasse platea dictumst. Proin sed elementum mi. Donec finibus venenatis vulputate. Nulla rutrum risus pretium velit rutrum convallis. Ut ut augue nunc. Aliquam consequat enim mollis, tempus est a, rhoncus tellus. Proin ornare vel turpis sed bibendum. Fusce tincidunt varius augue, eu laoreet libero dapibus quis. Vivamus arcu dui, gravida id cursus ac, blandit ullamcorper erat. Pellentesque lacinia nunc mauris, sit amet sagittis est faucibus ut."
+    },
+    {
+      "id": 5,
+      "title": "Hampstead Heath Wellness Day - Pilates and Nature",
+      "date": "Sun, Oct 23 · 4:00 PM",
+      "location": "Hampstead Tube Station, London",
+      "img": "./src/assets/card5.webp",
+      "event-type": "inperson",
+      "category": "health",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla posuere ligula, id commodo est cursus et. Sed massa mauris, auctor sed faucibus vehicula, viverra eu turpis. Suspendisse sollicitudin ipsum non mi luctus malesuada. In hac habitasse platea dictumst. Proin sed elementum mi. Donec finibus venenatis vulputate. Nulla rutrum risus pretium velit rutrum convallis. Ut ut augue nunc. Aliquam consequat enim mollis, tempus est a, rhoncus tellus. Proin ornare vel turpis sed bibendum. Fusce tincidunt varius augue, eu laoreet libero dapibus quis. Vivamus arcu dui, gravida id cursus ac, blandit ullamcorper erat. Pellentesque lacinia nunc mauris, sit amet sagittis est faucibus ut."
+    },
+    {
+      "id": 6,
+      "title": "On Kotlin: #4",
+      "date": "Thu, Oct 20 · 8:00 PM",
+      "location": "WeWork - Office Space & Coworking, London",
+      "img": "./src/assets/card6.webp",
+      "event-type": "inperson",
+      "category": "technology",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla posuere ligula, id commodo est cursus et. Sed massa mauris, auctor sed faucibus vehicula, viverra eu turpis. Suspendisse sollicitudin ipsum non mi luctus malesuada. In hac habitasse platea dictumst. Proin sed elementum mi. Donec finibus venenatis vulputate. Nulla rutrum risus pretium velit rutrum convallis. Ut ut augue nunc. Aliquam consequat enim mollis, tempus est a, rhoncus tellus. Proin ornare vel turpis sed bibendum. Fusce tincidunt varius augue, eu laoreet libero dapibus quis. Vivamus arcu dui, gravida id cursus ac, blandit ullamcorper erat. Pellentesque lacinia nunc mauris, sit amet sagittis est faucibus ut."
+    },
+    {
+      "id": 7,
+      "title": "[Free Workshop] Energy as Food & Medicine",
+      "date": "Sat, Oct 22 · 9:30 PM",
+      "location": "Online",
+      "img": "./src/assets/card7.webp",
+      "event-type": "online",
+      "category": "health",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla posuere ligula, id commodo est cursus et. Sed massa mauris, auctor sed faucibus vehicula, viverra eu turpis. Suspendisse sollicitudin ipsum non mi luctus malesuada. In hac habitasse platea dictumst. Proin sed elementum mi. Donec finibus venenatis vulputate. Nulla rutrum risus pretium velit rutrum convallis. Ut ut augue nunc. Aliquam consequat enim mollis, tempus est a, rhoncus tellus. Proin ornare vel turpis sed bibendum. Fusce tincidunt varius augue, eu laoreet libero dapibus quis. Vivamus arcu dui, gravida id cursus ac, blandit ullamcorper erat. Pellentesque lacinia nunc mauris, sit amet sagittis est faucibus ut."
+    },
+    {
+      "id": 8,
+      "title": "London Hack Night",
+      "date": "Wed, Oct 12 · 8:30 PM",
+      "location": "Confluent Europe Ltd, London",
+      "img": "./src/assets/card8.webp",
+      "event-type": "inperson",
+      "category": "technology",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla posuere ligula, id commodo est cursus et. Sed massa mauris, auctor sed faucibus vehicula, viverra eu turpis. Suspendisse sollicitudin ipsum non mi luctus malesuada. In hac habitasse platea dictumst. Proin sed elementum mi. Donec finibus venenatis vulputate. Nulla rutrum risus pretium velit rutrum convallis. Ut ut augue nunc. Aliquam consequat enim mollis, tempus est a, rhoncus tellus. Proin ornare vel turpis sed bibendum. Fusce tincidunt varius augue, eu laoreet libero dapibus quis. Vivamus arcu dui, gravida id cursus ac, blandit ullamcorper erat. Pellentesque lacinia nunc mauris, sit amet sagittis est faucibus ut."
+    }
+  ],
+  "user_joined_events": [
+    {
+      "user_id": 1,
+      "event_id": 1,
+      "id": 1
+    },
+    {
+      "user_id": 2,
+      "event_id": 2,
+      "id": 2
+    },
+    {
+      "user_id": 1,
+      "event_id": 5,
+      "id": 3
+    },
+    {
+      "user_id": 5,
+      "event_id": 8,
+      "id": 4
+    }
+  ]
+}

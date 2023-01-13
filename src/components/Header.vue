@@ -10,22 +10,24 @@
         <div class="collapse navbar-collapse" >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Events</a>
+<!--              <a class="nav-link" href="index.html">Events</a>-->
+              <router-link :to="{name: 'description'}" class="nav-link">Events</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="calendar.html">Calendar</a>
+<!--              <a class="nav-link" href="calendar.html">Calendar</a>-->
+              <router-link :to="{name: 'calendar'}" class="nav-link">Calendar</router-link>
             </li>
           </ul>
         </div>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li>
+            <li v-show="this.$store.state.user===false">
               <router-link :to="{name: 'login'}"><button type="button" class="btn text-light" id="login">Log in</button></router-link>
             </li>
-            <li>
+            <li v-show="this.$store.state.user===false">
              <router-link :to="{name: 'register'}"><button type="button" class="btn text-light" id="signup">Sign up</button></router-link>
             </li>
-            <li>
+            <li v-show="this.$store.state.user">
               <router-link :to="{name: 'profile'}"><button type="button" class="btn text-light" id="profile">Profile</button></router-link>
             </li>
             <li>
@@ -40,7 +42,8 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <section id="app">
     <Header></Header>
-    <router-view/>
+    <router-view></router-view>
     <Foot></Foot>
 <!--    <img alt="Vue logo" src="./assets/logo.png">-->
 <!--    <HelloWorld msg="Welcome to Your Vue.js App"/>-->

@@ -42,12 +42,44 @@
 
     </div>
   </section>
+
+  <Card :cardInfo=APIResponse></Card>
 </section>
 </template>
 
 <script>
+import axios from "axios";
+import Card from "../components/Card.vue"
 export default {
-  name: "Main"
+  name: "Main",
+  data: function (){
+    return{
+      APIResponse: [],
+
+    }
+  },
+  components:{
+    Card
+  },
+
+  methods:{
+    async APIData(){
+      try{
+        const res = await axios.get(`http://localhost:3000/events`);
+        this.APIResponse = res.data;
+        console.log(this.APIResponse)
+
+
+      }catch (error){
+        console.log("error", error)
+      }
+    }
+  },
+   mounted() {
+    this.APIData()
+    // console.log(this.APIResponse)
+  },
+
 }
 </script>
 
