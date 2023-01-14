@@ -32,7 +32,7 @@ const routes = [
         }
     },
     {
-        path: "/Description",
+        path: "/Description/:id",
         name: "description",
         component: description,
         meta: {

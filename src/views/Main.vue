@@ -15,7 +15,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="eventsection">
     <div class="container-xxl" style="margin-top: 160px;">
       <h2>Upcoming events</h2>
       <div class="d-flex justify-content-end" style="margin-right: 80px" onchange="filter()">

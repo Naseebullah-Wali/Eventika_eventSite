@@ -3,8 +3,8 @@
     <section>
       <div class="container-xxl col-9 d-flex bg-white border py-4
         px-5" style="margin-top: 50px;">
-        <h2 class="col-10">AutoML for Natural Language Processing</h2>
-        <a href="#" class="btn btn-dark col-2">Join the event</a>
+        <h2 class="col-10">{{this.dataToUsed.title}}</h2>
+        <a href="#" class="btn btn-dark col-2" @click.prevent="joinEvent(this.dataToUsed.id)">Join the event</a>
       </div>
     </section>
 
@@ -12,55 +12,19 @@
       <div class="row justify-content-center">
         <div class="col-9" style="padding-right: 50px;">
           <img src="../assets/card3.webp" class="w-100">
+<!--          <img :src="dataToUsed.img">-->
           <h5 class="mt-5">About this Event</h5>
-          <p class="mt-3">Automated machine learning is a process that automates some of the more complex or benign steps of the machine-learning lifecycle. This helps those without a deep theoretical background or practical experience with machine learning participate in AI development and help to accelerate the whole end to end journey.</p>
-          <p>The demand for expert-level knowledge in machine learning is outpacing supply. This is manifesting itself through open positions that far exceed the number of qualified applicants. AutoML aims to narrow this gap by automating processes that would otherwise be too complex for anyone other than a field expert.</p>
-          <p>This automation has led to user-friendly machine learning software with simple interfaces that anyone with beginner technical knowledge and time to learn the toolset can use, enabling non-data-science analysts, marketers, and IT staff to implement machine learning into their workflows. By scaling machine learning across various industries, all organizations benefit from boosted efficiency and effectiveness in the fields that need it most.</p>
-          <p>Civilization wouldn’t have been possible without language. Language is the cornerstone of our existence. We communicate and share ideas through languages. Everything we express verbally or in written form contains a great deal of information. The tone, word choice, and pauses all contribute to the depth and importance of the language. Advances in ML have led to machines that are able to read, understand, and derive meaning from languages and communicate back to you like humans. NLP has become increasingly important and relevant in solving business problems. However NLP is still considered by most non data scientists as a complex research area where you need a lot of theoretical knowledge and practical experience. In this session, we want to show you how combining AutoML and NLP can help fill that gap for many business users and also speed up the time it takes to deliver NLP projects. AutoML NLP gives you the power to build and deploy custom ML models that are capable of analyzing text documents, categorizing them, finding important information, or analyzing their sentiments.</p>
-          <a href="#" class="btn btn-dark w-100 py-3">Join the event</a>
+          <p >{{this.dataToUsed.description}}</p>
+          <a href="#" class="btn btn-dark w-100 py-3" @click.prevent="joinEvent(this.dataToUsed.id)">Join the event</a>
           <h5 class="mt-5">Events you may like</h5>
-          <div class="row mt-4">
-            <div class="col">
-              <div class="card card2">
-                <img src="../assets/card1.webp" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">Frontend Development Lightning Talks</h5>
-                  <p class="card-event-date pt-2">Thu, Oct 13 · 8:45 PM</p>
-                  <p class="card-event-location">2 Bankside, London</p>
-                  <a href="#" class="btn btn-dark mt-3">About event</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card card2">
-                <img src="../assets/card2.webp" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">What is the Metaverse? Meta explains it all.</h5>
-                  <p class="card-event-date pt-2">Wed, Oct 19 · 6:00 PM</p>
-                  <p class="card-event-location">Online</p>
-                  <a href="#" class="btn btn-dark mt-3">About event</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card card2">
-                <img src="../assets/card6.webp" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title">On Kotlin: #4</h5>
-                  <p class="card-event-date pt-2">Thu, Oct 20 · 8:00 PM</p>
-                  <p class="card-event-location">WeWork - Office Space & Coworking, London</p>
-                  <a href="#" class="btn btn-dark mt-3">About event</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Card :card-info="generalCardData"></Card>
         </div>
         <div class="col bg-white border h-100 pb-2 right-block-sticky">
           <div class="p-3">
             <h5>Date & Time</h5>
-            <p>Mon, Oct 17 · 7:30 PM</p>
+            <p>{{this.dataToUsed.date}}</p>
             <h5 class="mt-4">Location</h5>
-            <p>Principal Place, London</p>
+            <p>{{this.dataToUsed.location}}</p>
           </div>
 <!--          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.527039981535!2d-0.08138018428164229!3d51.52189247963755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb10a2721e7%3A0x6a92d93fc7b70414!2sPrincipal%20Place!5e0!3m2!1sru!2sru!4v1665956949308!5m2!1sru!2sru" style="border:0;" class="w-100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
         </div>
@@ -71,8 +35,56 @@
 </template>
 
 <script>
+import axios from "axios";
+import Card from "../components/Card.vue"
 export default {
-  name: "card_description"
+  name: "card_description",
+  components:{
+      Card
+  },
+  data: function (){
+    return{
+        dataToUsed: [],
+        URLParam: this.$route.params.id,
+        generalCardData:[],
+
+
+    }
+  },
+  methods:{
+    async fetMethod(){
+      const res = await axios.get(`http://localhost:3000/events/${this.URLParam}`);
+      this.dataToUsed = res.data;
+      console.log(this.dataToUsed)
+      console.log(localStorage.getItem('userInfo.'))
+    },
+    async Gennral (){
+      const test = await axios.get(`http://localhost:3000/events`);
+      this.generalCardData = test.data;
+
+    }
+    ,
+    async joinEvent(sth){
+      if (this.$store.state.user === false){
+        alert ("Register Or log in first please")
+      }else{
+        const sender = await axios.post(`http://localhost:3000/user_joined_events`,{
+          user_id: '',
+          event_id: sth,
+
+        });
+        console.log(sender)
+      }
+    }
+  },
+  mounted() {
+
+    this.fetMethod()
+    this.Gennral()
+
+
+  }
+
 }
 </script>
 

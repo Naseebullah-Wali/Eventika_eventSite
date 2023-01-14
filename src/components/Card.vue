@@ -11,9 +11,11 @@
           <h5 class="card-title ">{{info.title}}</h5>
           <p class="card-text">{{ info.date }}</p>
           <p class="card-text">{{ info.location }}</p>
+          <p class="card-text">{{ info.id }}</p>
           <pre>{{info.img}}</pre>
-
-          <button onclick="" class="btn btn-dark mt-3 w-100">About event</button>
+          <router-link :to="`/Description/${info.id}`" >
+          <button  class="btn btn-dark mt-3 w-100">About event</button>
+          </router-link>
         </div>
       </div>
     </div>

@@ -10,8 +10,8 @@
         <div class="collapse navbar-collapse" >
           <ul class="navbar-nav">
             <li class="nav-item">
-<!--              <a class="nav-link" href="index.html">Events</a>-->
-              <router-link :to="{name: 'description'}" class="nav-link">Events</router-link>
+              <a class="nav-link" href="#eventsection">Events</a>
+<!--              <router-link :to="{name: 'description'}" class="nav-link">Events</router-link>-->
             </li>
             <li class="nav-item">
 <!--              <a class="nav-link" href="calendar.html">Calendar</a>-->
@@ -30,8 +30,8 @@
             <li v-show="this.$store.state.user">
               <router-link :to="{name: 'profile'}"><button type="button" class="btn text-light" id="profile">Profile</button></router-link>
             </li>
-            <li>
-              <button type="button" class="btn btn-danger" id="logout">Logout</button>
+            <li v-show="this.$store.state.user">
+              <button type="button" class="btn btn-danger" @click.prevent="logout" id="logout">Logout</button>
             </li>
           </ul>
         </div>
@@ -43,6 +43,12 @@
 <script>
 export default {
   name: "Header",
+  methods:{
+    logout(){
+      localStorage.clear();
+      this.$store.commit('updateUser', false)
+    }
+  }
 
 }
 </script>

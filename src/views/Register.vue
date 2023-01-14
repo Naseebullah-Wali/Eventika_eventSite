@@ -27,7 +27,7 @@
 
         <button type="submit" class="btn btn-dark w-100 py-3 mt-4" @click.prevent="Reg">Register</button>
 
-        <p class="text-center text-muted mt-5">Have already an account?  <a href="log_in.html" class="fw-bold text-body"><u>Log in here</u></a></p>
+        <p class="text-center text-muted mt-5">Have already an account? <router-link :to="{name: 'login'}" class="fw-bold text-body"><u>Log in here</u></router-link></p>
 
       </form>
 
@@ -52,7 +52,9 @@ export default {
   methods:{
 
     async Reg(){
-
+      if(this.email === '' && this.password === '' && this.lastname === '' && this.firstname === ''){
+        alert('Please fill all the input fields')
+      }else{
       const result = await axios.post(`http://localhost:3000/users`, {
         email: this.email,
         password: this.password,
@@ -67,7 +69,8 @@ export default {
          await this.$router.push({name: "Main"})
          this.$store.commit("updateUser",true)
       }
-    },
+    }
+      },
   }
 
 
