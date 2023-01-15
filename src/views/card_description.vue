@@ -68,17 +68,17 @@ export default {
       if (this.$store.state.user === false){
         alert ("Register Or log in first please")
       }else{
+        let uidFromLocalStorage = JSON.parse(localStorage.getItem('userInfo'));
         const sender = await axios.post(`http://localhost:3000/user_joined_events`,{
-          user_id: '',
+          user_id: uidFromLocalStorage[0].id ,
           event_id: sth,
-
         });
+        alert('Event Has added to your Profile')
         console.log(sender)
       }
     }
   },
   mounted() {
-
     this.fetMethod()
     this.Gennral()
 

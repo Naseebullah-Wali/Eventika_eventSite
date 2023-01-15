@@ -39,6 +39,7 @@
       "email": "check@gmail.com",
       "password": "12345",
       "lastname": "checkName",
+      "firstname": "firstName",
       "id": 6
     },
     {
@@ -83,7 +84,7 @@
       "title": "Frontend Development Lightning Talks",
       "date": "Thu, Oct 13 · 8:45 PM",
       "location": "2 Bankside, London",
-      "img": "../assets/card2.webp",
+      "img": "../src/assets/card2.webp",
       "event-type": "inperson",
       "category": "technology",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla posuere ligula, id commodo est cursus et. Sed massa mauris, auctor sed faucibus vehicula, viverra eu turpis. Suspendisse sollicitudin ipsum non mi luctus malesuada. In hac habitasse platea dictumst. Proin sed elementum mi. Donec finibus venenatis vulputate. Nulla rutrum risus pretium velit rutrum convallis. Ut ut augue nunc. Aliquam consequat enim mollis, tempus est a, rhoncus tellus. Proin ornare vel turpis sed bibendum. Fusce tincidunt varius augue, eu laoreet libero dapibus quis. Vivamus arcu dui, gravida id cursus ac, blandit ullamcorper erat. Pellentesque lacinia nunc mauris, sit amet sagittis est faucibus ut."
@@ -93,7 +94,7 @@
       "title": "What is the Metaverse? Meta explains it all.",
       "date": "Wed, Oct 19 · 6:00 PM",
       "location": "Online",
-      "img": "./src/assets/card2.webp",
+      "img": "../assets/avatar.svg",
       "event-type": "online",
       "category": "technology",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla posuere ligula, id commodo est cursus et. Sed massa mauris, auctor sed faucibus vehicula, viverra eu turpis. Suspendisse sollicitudin ipsum non mi luctus malesuada. In hac habitasse platea dictumst. Proin sed elementum mi. Donec finibus venenatis vulputate. Nulla rutrum risus pretium velit rutrum convallis. Ut ut augue nunc. Aliquam consequat enim mollis, tempus est a, rhoncus tellus. Proin ornare vel turpis sed bibendum. Fusce tincidunt varius augue, eu laoreet libero dapibus quis. Vivamus arcu dui, gravida id cursus ac, blandit ullamcorper erat. Pellentesque lacinia nunc mauris, sit amet sagittis est faucibus ut."
@@ -161,17 +162,17 @@
   ],
   "user_joined_events": [
     {
-      "user_id": 1,
+      "user_id": 8,
       "event_id": 1,
       "id": 1
     },
     {
-      "user_id": 2,
+      "user_id": 8,
       "event_id": 2,
       "id": 2
     },
     {
-      "user_id": 1,
+      "user_id": 8,
       "event_id": 5,
       "id": 3
     },
@@ -181,9 +182,10 @@
       "id": 4
     },
     {
-      "user_id": "",
-      "event_id": 1,
-      "id": 5
+      "user_id": 6,
+      "event_id": 4,
+      "id": 6
     }
+
   ]
 }

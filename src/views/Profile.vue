@@ -5,61 +5,25 @@
       <div class="col-md-3">
         <div class="py-5 bg-dark rounded-top">
           <img src="../assets/avatar.svg" class="w-50 mx-auto d-block">
-          <h5 class="text-white text-center mt-4">Kyunney Nikiforova</h5>
+          <h5 class="text-white text-center mt-4">{{this.CurrentUser.firstname}} {{this.CurrentUser.lastname}}</h5>
         </div>
         <ul class="list-group">
-          <li class="list-group-item">
-            <a class="text-decoration-none link-dark" href="#">My profile</a>
-          </li>
+<!--          <li class="list-group-item">-->
+<!--            <a class="text-decoration-none link-dark" href="#">My profile</a>-->
+<!--          </li>-->
           <li class="list-group-item list-group-item-secondary">
             <a class="text-decoration-none link-dark active" aria-current="true" href="#">My events</a>
           </li>
           <li class="list-group-item">
-            <a class="text-danger text-decoration-none link-dark" href="index.html">Log out</a>
+            <a class="text-danger text-decoration-none link-dark" @click.prevent="logout">Log out</a>
           </li>
         </ul>
       </div>
 
       <div class="col-md-9" style="padding-left: 50px;">
         <h3>My events</h3>
-        <div class="row mt-4">
-          <div class="col">
-            <div class="card card2">
-              <img src="../assets/card1.webp" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Frontend Development Lightning Talks</h5>
-                <p class="card-event-date pt-2">Thu, Oct 13 · 8:45 PM</p>
-                <p class="card-event-location">2 Bankside, London</p>
-                <a href="#" class="btn btn-dark mt-3">About event</a>
-                <a href="#" class="btn btn-outline-dark mt-3">Cancel</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card2">
-              <img src="../assets/card2.webp" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">What is the Metaverse? Meta explains it all.</h5>
-                <p class="card-event-date pt-2">Wed, Oct 19 · 6:00 PM</p>
-                <p class="card-event-location">Online</p>
-                <a href="#" class="btn btn-dark mt-3">About event</a>
-                <a href="#" class="btn btn-outline-dark mt-3">Cancel</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card2">
-              <img src="../assets/card6.webp" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">On Kotlin: #4</h5>
-                <p class="card-event-date pt-2">Thu, Oct 20 · 8:00 PM</p>
-                <p class="card-event-location">WeWork - Office Space & Coworking, London</p>
-                <a href="#" class="btn btn-dark mt-3">About event</a>
-                <a href="#" class="btn btn-outline-dark mt-3">Cancel</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Card :card-info="eventData"></Card>
+
       </div>
     </div>
   </div>
@@ -67,8 +31,49 @@
 </template>
 
 <script>
+import axios from "axios";
+import Card from '../components/Card'
 export default {
-  name: "Profile"
+  name: "Profile",
+  data:function (){
+    return{
+      eventData: [],
+      CurrentUser: ''
+    }
+  },
+  components:{
+    Card
+  },
+  methods:{
+   async dataFromAPI(){
+      try{
+        const user = JSON.parse(localStorage.getItem('userInfo'));
+        const CurrentUID = user[0].id;
+        this.CurrentUser = user[0];
+        const res = await axios.get(`http://localhost:3000/user_joined_events?user_id=${CurrentUID}`);
+        // const UserInfo = await axios.get(`http://localhost:3000/users/${CurrentUID}`);
+        for(let i =0; i <res.data.length; i++){
+          let selectedEvents= (await axios.get(`http://localhost:3000/events/${res.data[i].event_id}`)).data
+          this.eventData.push(selectedEvents)
+        }
+
+
+        // this.eventData = selectedEvents;
+        //   console.log(res.data[0].event_id)
+        // console.log(this.CurrentUser.firstname && this.CurrentUser.lastname)
+      }catch (error){
+        console.log("error", error)
+      }
+    },
+    logout(){
+      localStorage.clear();
+      this.$store.commit('updateUser', false)
+      this.$router.push({name: "Main"})
+    }
+  },
+  mounted() {
+    this.dataFromAPI()
+  }
 }
 </script>
 
