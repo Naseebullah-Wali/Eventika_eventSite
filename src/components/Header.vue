@@ -21,16 +21,16 @@
         </div>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li v-show="this.$store.state.user===false">
+            <li v-show="userState===false">
               <router-link :to="{name: 'login'}"><button type="button" class="btn text-light" id="login">Log in</button></router-link>
             </li>
-            <li v-show="this.$store.state.user===false">
+            <li v-show="userState===false">
              <router-link :to="{name: 'register'}"><button type="button" class="btn text-light" id="signup">Sign up</button></router-link>
             </li>
-            <li v-show="this.$store.state.user">
+            <li v-show="userState">
               <router-link :to="{name: 'profile'}"><button type="button" class="btn text-light" id="profile">Profile</button></router-link>
             </li>
-            <li v-show="this.$store.state.user">
+            <li v-show="userState">
               <button type="button" class="btn btn-danger" @click.prevent="logout" id="logout">Logout</button>
             </li>
           </ul>
@@ -41,8 +41,15 @@
 </template>
 
 <script>
+
+// import userstate from '../store/user'
 export default {
   name: "Header",
+  data: function(){
+  return{
+      // userState: userstate
+  }
+  },
   methods:{
     logout(){
       localStorage.clear();

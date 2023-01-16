@@ -186,6 +186,29 @@
       "event_id": 4,
       "id": 6
     }
-
+  ],
+  "calendarEvents": [
+    {
+      "id": 1,
+      "title": "Дедлайн защиты третьей лабораторной",
+      "date": "2023-01-13"
+    },
+    {
+      "id": 2,
+      "title": "Вторая контрольная работа",
+      "date": "2022-12-27"
+    },
+    {
+      "title": "ekj",
+      "description": "el;wkr",
+      "date": "2023-01-13",
+      "id": 3
+    },
+    {
+      "title": "sometask",
+      "description": "need to be done",
+      "date": "2023-01-26",
+      "id": 4
+    }
   ]
 }
