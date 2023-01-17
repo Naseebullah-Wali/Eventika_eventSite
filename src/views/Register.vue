@@ -38,7 +38,7 @@
 <script>
 import axios from "axios";
 // import router from "@/router";
-
+import { useStateStore } from '../store/UserStatus.js'
 export default {
   name: "Register",
   data: function (){
@@ -67,7 +67,8 @@ export default {
         // await this.$router.push({name: "Main"});
         localStorage.setItem('userInfo', JSON.stringify(result.data));
          await this.$router.push({name: "Main"})
-         this.$store.commit("updateUser",true)
+         const { StateChecker } = useStateStore()
+          StateChecker(true);
       }
     }
       },

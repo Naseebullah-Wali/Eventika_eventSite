@@ -5,7 +5,7 @@ import Register from "../views/Register.vue";
 import description from "../views/card_description.vue";
 import calender from "../views/CalendarPage.vue";
 import Profile from "../views/Profile.vue";
-import notePage from "../views/NotesPage.vue";
+
 
 const routes = [
     {
@@ -54,14 +54,6 @@ const routes = [
         component: Profile,
         meta: {
             title: 'Profile'
-        }
-    },
-    {
-        path: "/Notes",
-        name: "notes",
-        component: notePage,
-        meta: {
-            title: 'notes'
         }
     }
 ];

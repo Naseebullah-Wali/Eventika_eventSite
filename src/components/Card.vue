@@ -4,8 +4,8 @@
 <!--    <pre>{{this.cardInfo}}</pre>-->
     <div class="col-md-4 mt-2" v-for="info in cardInfo" :key="info.id">
       <div class="card h-100">
-<!--        <img src=../assets/card2.webp  alt="Not Found" class="card-img-top">-->
-        <img :src="info.img"  alt="Not Found" class="card-img-top">
+       <img src=../assets/card2.webp  alt="Not Found" class="card-img-top">
+        <!-- <img :src="info.img"  alt="Not Found" class="card-img-top"> -->
         <div class="card-body">
 
           <h5 class="card-title ">{{info.title}}</h5>

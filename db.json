@@ -76,6 +76,13 @@
       "lastname": "logcheck",
       "firstname": "logcheck",
       "id": 75
+    },
+    {
+      "email": "userfinal@gmail.com",
+      "password": "123456",
+      "lastname": "NewLast",
+      "firstname": "NewUser",
+      "id": 76
     }
   ],
   "events": [

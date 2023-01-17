@@ -27,13 +27,14 @@
 
 <script>
 import axios from "axios";
-
+import { useStateStore } from '../store/UserStatus.js'
 export default {
   name: "Login",
   data: function (){
     return{
       email: '',
-      password: ''
+      password: '',
+      
     }
   },
   methods:{
@@ -43,7 +44,8 @@ export default {
         if(res.status==200 && res.data.length>0){
           localStorage.setItem('userInfo', JSON.stringify(res.data));
           await this.$router.push({name: "Main"})
-          this.$store.commit("updateUser",true)
+          const { StateChecker } = useStateStore()
+          StateChecker(true);
         }else{
           alert("No user found")
         }

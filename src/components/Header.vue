@@ -21,16 +21,16 @@
         </div>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li v-show="userState===false">
+            <li v-show="UserStatusChecker==false">
               <router-link :to="{name: 'login'}"><button type="button" class="btn text-light" id="login">Log in</button></router-link>
             </li>
-            <li v-show="userState===false">
+            <li v-show="UserStatusChecker==false">
              <router-link :to="{name: 'register'}"><button type="button" class="btn text-light" id="signup">Sign up</button></router-link>
             </li>
-            <li v-show="userState">
+            <li v-show="UserStatusChecker">
               <router-link :to="{name: 'profile'}"><button type="button" class="btn text-light" id="profile">Profile</button></router-link>
             </li>
-            <li v-show="userState">
+            <li v-show="UserStatusChecker">
               <button type="button" class="btn btn-danger" @click.prevent="logout" id="logout">Logout</button>
             </li>
           </ul>
@@ -43,17 +43,36 @@
 <script>
 
 // import userstate from '../store/user'
+import { storeToRefs } from 'pinia'
+import { useStateStore } from '../store/UserStatus.js'
+
 export default {
+  
   name: "Header",
   data: function(){
   return{
       // userState: userstate
+      UserStatusChecker: null ,
   }
   },
+  mounted(){
+    this.check()
+    console.log('mouthed',this.UserStatusChecker)
+  },
   methods:{
+    check(){
+      const  { userState } = storeToRefs(useStateStore())
+      this.UserStatusChecker= userState;
+
+    },
     logout(){
+      const { StateChecker } = useStateStore()
       localStorage.clear();
-      this.$store.commit('updateUser', false)
+      StateChecker(false);
+      window.location.reload();
+      console.log('logout' , this.UserStatusChecker)
+      
+      // this.$store.commit('updateUser', false)
     }
   }
 
