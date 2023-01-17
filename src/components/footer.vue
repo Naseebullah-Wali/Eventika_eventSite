@@ -6,10 +6,12 @@
         <h5>Your account</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
-            <a href="sign_up.html" class="nav-link p-0 text-white">Sign up</a>
+            <router-link class="nav-link p-0 text-white" :to="{name: 'register'}">Sign up</router-link>
+            <!-- <a href="sign_up.html" class="nav-link p-0 text-white"></a> -->
           </li>
           <li class="nav-item mb-2">
-            <a href="log_in.html" class="nav-link p-0 text-white">Log in</a>
+            <router-link class="nav-link p-0 text-white" :to="{name: 'login'}">Log in</router-link>
+            <!-- <a href="log_in.html" class="nav-link p-0 text-white">Log in</a> -->
           </li>
           <li class="nav-item mb-2">
             <a href="#" class="nav-link p-0 text-white">Help</a>
@@ -20,10 +22,12 @@
         <h5>Discover</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
-            <a href="index.html" class="nav-link p-0 text-white">Events</a>
+
+            <a href="#eventsection" class="nav-link p-0 text-white">Events</a>
           </li>
           <li class="nav-item mb-2">
-            <a href="calendar.html" class="nav-link p-0 text-white">Calendar</a>
+            <router-link class="nav-link p-0 text-white" :to="{name: 'calendar'}">Calendar</router-link>
+            <!-- <a href="calendar.html" class="nav-link p-0 text-white">Calendar</a> -->
           </li>
         </ul>
       </div>

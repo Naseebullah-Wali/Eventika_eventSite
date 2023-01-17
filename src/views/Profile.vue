@@ -33,6 +33,7 @@
 <script>
 import axios from "axios";
 import Card from '../components/Card'
+import { useStateStore } from '../store/UserStatus.js'
 export default {
   name: "Profile",
   data:function (){
@@ -57,17 +58,15 @@ export default {
           this.eventData.push(selectedEvents)
         }
 
-
-        // this.eventData = selectedEvents;
-        //   console.log(res.data[0].event_id)
-        // console.log(this.CurrentUser.firstname && this.CurrentUser.lastname)
       }catch (error){
         console.log("error", error)
       }
     },
     logout(){
+      const { StateChecker } = useStateStore()
       localStorage.clear();
-      this.$store.commit('updateUser', false)
+      StateChecker(false);
+      window.location.reload();
       this.$router.push({name: "Main"})
     }
   },

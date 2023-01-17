@@ -24,8 +24,7 @@
     "pinia-persists": "^1.2.0",
     "popper.js": "^1.16.1",
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6",
-    "vuex": "^4.1.0"
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",

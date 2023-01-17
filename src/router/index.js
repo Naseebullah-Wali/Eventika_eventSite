@@ -5,6 +5,7 @@ import Register from "../views/Register.vue";
 import description from "../views/card_description.vue";
 import calender from "../views/CalendarPage.vue";
 import Profile from "../views/Profile.vue";
+import Not_Found from "../views/404.vue";
 
 
 const routes = [
@@ -55,7 +56,16 @@ const routes = [
         meta: {
             title: 'Profile'
         }
-    }
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        name: "Not_Found",
+        component: Not_Found,
+        meta:{
+          title: '404'
+        }
+    
+      }
 ];
 
 const router = createRouter({

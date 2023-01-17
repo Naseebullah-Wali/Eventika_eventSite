@@ -18,7 +18,7 @@
   <section id="eventsection">
     <div class="container-xxl" style="margin-top: 160px;">
       <h2>Upcoming events</h2>
-      <div class="d-flex justify-content-end" style="margin-right: 80px" onchange="filter()">
+      <div class="d-flex justify-content-end" style="margin-right: 80px" @change="checkfilter">
         <div class="dropdown  ms-3">
           <select class="form-select" aria-label=".form-select-lg example" id="event-type">
             <option>Any type</option>
@@ -43,7 +43,7 @@
     </div>
   </section>
 
-  <Card :cardInfo=APIResponse></Card>
+  <Card :cardInfo=filteredArray></Card>
 </section>
 </template>
 
@@ -55,6 +55,7 @@ export default {
   data: function (){
     return{
       APIResponse: [],
+      filteredArray: [],
 
     }
   },
@@ -67,12 +68,27 @@ export default {
       try{
         const res = await axios.get(`http://localhost:3000/events`);
         this.APIResponse = res.data;
-        console.log(this.APIResponse)
+        
+        // console.log(this.APIResponse)
 
 
       }catch (error){
         console.log("error", error)
       }
+    },
+    checkfilter(){
+      const eventTypeValue = document.getElementById("event-type").value;
+      const categoryValue = document.getElementById("category").value;
+    
+    for (let i = 0; i < this.APIResponse.length; i++) {
+        if ((this.APIResponse[i].eventtype == (eventTypeValue) || eventTypeValue==="Any type") &&
+            (this.APIResponse[i].category==(categoryValue) || categoryValue==="Any category")) {
+              this.filteredArray.push(this.APIResponse[i])
+        } else {
+          this.APIResponse[i].style.display = "none";
+        }
+        
+    }console.log(this.filteredArray)
     }
   },
    mounted() {
