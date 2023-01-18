@@ -83,6 +83,13 @@
       "lastname": "NewLast",
       "firstname": "NewUser",
       "id": 76
+    },
+    {
+      "email": "Ahmad@gmail.com",
+      "password": "123456",
+      "lastname": "Khan",
+      "firstname": "Ahmad",
+      "id": 77
     }
   ],
   "events": [
@@ -192,6 +199,11 @@
       "user_id": 6,
       "event_id": 4,
       "id": 6
+    },
+    {
+      "user_id": 77,
+      "event_id": 4,
+      "id": 7
     }
   ],
   "calendarEvents": [

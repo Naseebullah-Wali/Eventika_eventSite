@@ -85,7 +85,7 @@ export default {
             (this.APIResponse[i].category==(categoryValue) || categoryValue==="Any category")) {
               this.filteredArray.push(this.APIResponse[i])
         } else {
-          this.APIResponse[i].style.display = "none";
+          console.log("API data error")
         }
         
     }console.log(this.filteredArray)
@@ -93,6 +93,7 @@ export default {
   },
    mounted() {
     this.APIData()
+    // this.checkfilter()
     // console.log(this.APIResponse)
   },
 

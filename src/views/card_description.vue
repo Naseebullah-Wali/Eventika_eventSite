@@ -37,6 +37,8 @@
 <script>
 import axios from "axios";
 import Card from "../components/Card.vue"
+import { storeToRefs } from 'pinia'
+import { useStateStore } from '../store/UserStatus.js'
 export default {
   name: "card_description",
   components:{
@@ -47,6 +49,7 @@ export default {
         dataToUsed: [],
         URLParam: this.$route.params.id,
         generalCardData:[],
+        CheckUserState: null
 
 
     }
@@ -65,7 +68,7 @@ export default {
     }
     ,
     async joinEvent(sth){
-      if (this.$store.state.user === false){
+      if (this.CheckUserState === false){
         alert ("Register Or log in first please")
       }else{
         let uidFromLocalStorage = JSON.parse(localStorage.getItem('userInfo'));
@@ -76,6 +79,10 @@ export default {
         alert('Event Has added to your Profile')
         console.log(sender)
       }
+    },
+    checkState(){
+      const  { userState } = storeToRefs(useStateStore())
+      this.CheckUserState= userState;
     }
   },
   mounted() {
