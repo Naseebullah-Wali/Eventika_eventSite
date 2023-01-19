@@ -1,7 +1,6 @@
 <template>
 <section>
   <div class="row ">
-<!--    <pre>{{this.cardInfo}}</pre>-->
     <div class="col-md-4 mt-2" v-for="info in cardInfo" :key="info.id">
       <div class="card h-100">
        <img src=../assets/card5.webp  alt="Not Found" class="card-img-top">
@@ -11,8 +10,6 @@
           <h5 class="card-title ">{{info.title}}</h5>
           <p class="card-text">{{ info.date }}</p>
           <p class="card-text">{{ info.location }}</p>
-          <!-- <p class="card-text">{{ info.id }}</p> -->
-          <!-- <pre>{{info.img}}</pre> -->
           <router-link :to="`/Description/${info.id}`" >
           <button  class="btn btn-dark mt-3 w-100">About event</button>
           </router-link>
@@ -32,9 +29,6 @@ export default {
       required: true
     }
   },
-  mounted() {
-    // console.log(this.cardInfo)
-  }
 }
 </script>
 

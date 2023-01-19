@@ -204,6 +204,11 @@
       "user_id": 77,
       "event_id": 4,
       "id": 7
+    },
+    {
+      "user_id": 77,
+      "event_id": 8,
+      "id": 8
     }
   ],
   "calendarEvents": [

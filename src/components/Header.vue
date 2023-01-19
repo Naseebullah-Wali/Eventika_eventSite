@@ -2,7 +2,6 @@
   <section>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-xxl">
-<!--        <a class="navbar-brand" href="index.html">Eventika</a>-->
         <router-link class="navbar-brand" :to="{name: 'Main'}">Eventika</router-link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -11,10 +10,8 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#eventsection">Events</a>
-<!--              <router-link :to="{name: 'description'}" class="nav-link">Events</router-link>-->
             </li>
             <li class="nav-item">
-<!--              <a class="nav-link" href="calendar.html">Calendar</a>-->
               <router-link :to="{name: 'calendar'}" class="nav-link">Calendar</router-link>
             </li>
           </ul>
@@ -41,8 +38,6 @@
 </template>
 
 <script>
-
-// import userstate from '../store/user'
 import { storeToRefs } from 'pinia'
 import { useStateStore } from '../store/UserStatus.js'
 
@@ -51,7 +46,6 @@ export default {
   name: "Header",
   data: function(){
   return{
-      // userState: userstate
       UserStatusChecker: null ,
   }
   },
@@ -71,8 +65,6 @@ export default {
       StateChecker(false);
       window.location.reload();
       console.log('logout' , this.UserStatusChecker)
-      
-      // this.$store.commit('updateUser', false)
     }
   }
 
